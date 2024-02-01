@@ -55,7 +55,7 @@ header a:hover {
 /* Accueil */
 #accueil {
     background-image: url("imgs/pizza-2810589_1920.jpg");
-    min-height: 800px;
+    min-height: 1000px;
     width: 100%;
     animation: fadeInAnimation ease 1s;
     display: flex;
@@ -108,7 +108,7 @@ header a:hover {
 
 #carte {
     border: 2px solid black;
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 .plats {
@@ -197,6 +197,7 @@ header a:hover {
 /* Contact */
 #contact {
     border: 2px solid black;
+    padding-top: 50px;
 }
 
 #contact h2 {
