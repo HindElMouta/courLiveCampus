@@ -1,0 +1,101 @@
+/* Image de fond */
+.background {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+}
+
+/* container de ma page accueil */
+.container {
+    background-image: url(illustration.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 49%;
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    margin-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: white;
+}
+
+/* nav bar */
+nav {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: orange;
+    font-size: 1,9rem;
+}
+
+h1 {
+
+}
+/* button NavBar */
+.button-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: auto;
+    justify-content: end;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-signin {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.button-signin:hover {
+    background-color: #e0e0e0;
+}
+
+.button-signup {
+    background-color: #6a5acd;
+    color: white;
+}
+
+.button-signup:hover {
+    background-color: #5f4ab6;
+}
+
+/* text accueil */
+h1 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+.Accueil {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 110px;
+}

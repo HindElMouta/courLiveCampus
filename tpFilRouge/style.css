@@ -1,0 +1,358 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0% 100% 0% ;
+}
+
+#content {
+    grid-column: 2 / 2;
+}
+
+
+h1, h2, h3 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: Pacifico, Arial, Helvetica, sans-serif;
+}
+
+/* Barre menu*/
+header {
+    background-color: #990000;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#titre {
+    padding-left: 30px;
+}
+
+header a {
+    font-size: 1.5em;
+    color: white;
+    padding-right: 30px;
+    text-decoration: none;
+    font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+/* Accueil */
+#accueil {
+    background-image: url("imgs/pizza-2810589_1920.jpg");
+    min-height: 800px;
+    width: 100%;
+    animation: fadeInAnimation ease 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#accueil h1 {
+    font-size: 5em;
+}
+
+.boutton {
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 30%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    background-color: #990000;
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Liberation-bold', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+
+}
+
+.boutton:hover {
+    background-color: white;
+    color: #990000;
+    transform: scale(1.3);
+}
+
+
+/* Notre carte */
+#carte h2 {
+    color:#0c9e0c;
+    font-size: 2.5em;
+}
+
+#carte h3 {
+    color:#0c9e0c;
+    font-size: 1.5em;
+}
+
+#carte {
+    border: 2px solid black;
+    padding-top: 20px;
+}
+
+.plats {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 70px 0;
+}
+
+.plats section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.7;
+    margin: 10px 0 30px 0;
+    font-size: 1.5em;
+    font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.plats img {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 20px;
+}
+
+.plats img:hover {
+    rotate: 10deg;
+    transform: scale(0.8);
+}
+
+
+/* Nos services */
+#services {
+    background-color: #990000;
+    min-height: 100px;
+    overflow: hidden;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#services h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation div {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: #5c0000;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.presentation div p{
+    padding: 2em;
+}
+
+.presentation section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+#services img {
+    width: 400px;
+    height: 300px;
+}
+
+#services img:hover {
+    transform: scale(0.9);
+    border-radius: 5%;
+}
+
+
+/* Contact */
+#contact {
+    border: 2px solid black;
+}
+
+#contact h2 {
+    color:#0c9e0c;
+    font-size: 2.5em;
+}
+
+#colonnes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0 50px 0;
+}
+
+#colonnes section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ligne {
+    display: flex;
+    
+    align-items: center;
+    font-size: 1.3em;
+    color: #0c9e0c;
+    font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.ligne p, .ligne a {
+    padding-left: 40px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.ligne a {
+    text-decoration: none;
+    color: #0c9e0c;
+}
+
+#map img {
+    height: 300px;
+}
+
+.material-symbols-outlined {
+    font-family: 'Liberation', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 100px;
+  font-variation-settings:
+  'FILL' 10,
+  'wght' 1000,
+  'GRAD' 0,
+  'opsz' 240
+}
+
+
+
+/* Footer */
+footer {
+    color: white;
+    background-color: #990000;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    min-height: 100px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .boutton {
+        font-size: 1.5em;
+    }
+
+    #accueil h1 {
+        font-size: 4em;
+    }
+
+    #titre {
+        margin: auto;
+    }
+
+    .plats {
+        flex-wrap: wrap;
+    }
+
+    #colonnes {
+        flex-wrap: wrap;
+    }
+
+    .ligne {
+        margin-bottom: 30px;
+    }
+
+    #services img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .presentation div {
+        width: 300px;
+        height: 250px;
+        font-size: 1.1em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .boutton {
+        font-size: 1em;
+    }
+
+    #accueil h1 {
+        font-size: 3em;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #content {
+        grid-column: 1 / 4;
+    }
+
+    #colonnes section {
+        margin: 30px 0 0 0;
+    }
+
+    #services img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .presentation div {
+        width: 200px;
+        height: 150px;
+        font-size: 0.9em;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    #services img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .presentation div {
+        width: 150px;
+        height: 100px;
+        font-size: 0.8em;
+    }
+
+}
+
