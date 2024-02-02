@@ -13,6 +13,7 @@ body {
     height: 200px;
     border: 10px solid #333;
     border-radius: 50%;
+    margin-bottom: 20px; /* Ajoutez une marge pour l'espace entre l'horloge et les chiffres */
 }
 
 .hour, .minute, .second {
@@ -23,13 +24,12 @@ body {
     top: 50%;
     transform-origin: 100%;
     transform: rotate(90deg);
-    transform-origin: 100%;
     transition: transform 0.5s cubic-bezier(0.4, 2.6, 0.3, 1);
 }
 
 .minute {
     height: 1.5px;
-    background-color: #666;
+    background-color: #333;
 }
 
 .second {
@@ -37,3 +37,13 @@ body {
     background-color: red;
 }
 
+#current-time {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center; /* Centrez le texte */
+}
+
+#current-time span {
+    margin: 0 5px; /* Ajoutez une marge entre les chiffres */
+}
