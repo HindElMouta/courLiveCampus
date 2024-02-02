@@ -15,10 +15,16 @@ function updateClock() {
     hourElement.style.transform = `rotate(${hourRotation}deg)`;
     minuteElement.style.transform = `rotate(${minuteRotation}deg)`;
     secondElement.style.transform = `rotate(${secondRotation}deg)`;
+    currentTimeElement.textContent = `${formatDigit(hour)}:${formatDigit(minute)}:${formatDigit(second)}`;
+
 }
 
 function startClock() {
     setInterval(updateClock, 1000);
+}
+
+function formatDigit(digit) {
+    return digit < 10 ? `0${digit}` : digit;
 }
 
 document.addEventListener('DOMContentLoaded', startClock);
